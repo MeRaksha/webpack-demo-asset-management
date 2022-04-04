@@ -1,0 +1,36 @@
+{
+  "name": "webpack-demo-getting-started",
+  "version": "1.0.0",
+  "description": "The very basic demo for webpack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "serve dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeRaksha/webpack-demo-gettingStarted.git"
+  },
+  "keywords": [
+    "basic",
+    "demo",
+    "webpack"
+  ],
+  "author": "raksha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MeRaksha/webpack-demo-gettingStarted/issues"
+  },
+  "homepage": "https://github.com/MeRaksha/webpack-demo-gettingStarted#readme",
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "serve": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
