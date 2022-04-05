@@ -1,7 +1,7 @@
 {
   "name": "webpack-demo-getting-started",
   "version": "1.0.0",
-  "description": "The very basic demo for webpack",
+  "description": "Asset Management Using Webpack",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MeRaksha/webpack-demo-gettingStarted.git"
+    "url": "git+https://github.com/MeRaksha/webpack-demo-asset-management.git"
   },
   "keywords": [
     "basic",
@@ -20,9 +20,9 @@
   "author": "raksha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MeRaksha/webpack-demo-gettingStarted/issues"
+    "url": "https://github.com/MeRaksha/webpack-demo-asset-management/issues"
   },
-  "homepage": "https://github.com/MeRaksha/webpack-demo-gettingStarted#readme",
+  "homepage": "https://github.com/MeRaksha/webpack-demo-asset-management#readme",
   "dependencies": {
     "lodash-es": "^4.17.21"
   },
