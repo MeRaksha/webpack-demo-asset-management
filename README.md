@@ -43,3 +43,17 @@ module: {
 ```
 
 When add the above configurations and <code>import MyImage from './my-image.png' </code>, that image will be processed and added to our output directory and the <code>MyImage</code> variable will contain the final url of that image after processing. When using the css-loader, a similar process will occur for <code>url('./my-image.png')</code> within our CSS. The loader will recognize this is a local file, and replace the <code>'./my-image.png'</code> path with the final path to the image in our output directory. The html-loader handles <code>&lt;img src="./my-image.png" /></code> in the same manner.
+
+## Loading Fonts
+
+We can use the Asset Modules to load any type of file and output it to our build directory. This means we can use them for any kind of file, including fonts.
+
+webpack.config.js module configurations section:
+ ```sh
+module: {
+  rules: [{
+    test: /\.(woff|woff2|eot|ttf|otf)$/i,
+    type: 'asset/resource'
+  }],
+}
+```
