@@ -9,6 +9,8 @@ One of the coolest webpack features is that we can also include any other type o
 - npm run build
 - npm serve
 
+## _TOPICS COVERED IN THIS DEMO:_
+
 ## Loading CSS
 In order to import a CSS file from within a JavaScript module, we need to install and add the style-loader and css-loader to our module configuration:
 
@@ -54,6 +56,31 @@ module: {
   rules: [{
     test: /\.(woff|woff2|eot|ttf|otf)$/i,
     type: 'asset/resource'
+  }],
+}
+```
+
+## Loading Data
+#### _data, like JSON files, CSVs, TSVs, and XML._
+
+Support for JSON is actually built-in, i.e <code>import Data from './data.json' </code> will work by default.
+To import CSVs, TSVs, and XML we can use the csv-loader and xml-loader.
+
+```sh
+npm install --save-dev csv-loader xml-loader
+```
+
+
+webpack.config.js module configurations section:
+ ```sh
+module: {
+  rules: [ {
+    test: /\.(csv|tsv)$/i,
+    use: ['csv-loader'],
+  },
+  {
+    test: /\.xml$/i,
+    use: ['xml-loader'],
   }],
 }
 ```
